@@ -6,40 +6,69 @@ This script is used for scrapping Tokopedia Reviews by using the Tokopedia Graph
 
 1. Clone the repository
 
-```sh
-git clone https://github.com/Shafnaa/scrapping-tokopedia-review.git
-```
+	```sh
+	git clone https://github.com/Shafnaa/scrapping-tokopedia-review.git
+	```
 
-2. Create Virtual Environment 
+2. Change directory to the cloned repository
 
-```sh
-python3 -m venv venv
-```
+	```sh
+	cd scrapping-tokopedia-review
+	```
 
-3. Install dependencies
+3. Create Virtual Environment 
 
-```sh
-pip install -r requirements.txt
-```
+	```sh
+	python3 -m venv venv
+	```	
 
-4. Run the program
+4. Activate the Virtual Environment
 
-```sh
-python3 main.py
-```
+	for Windows
 
-5. Choose the operation needed
+	```sh
+	# In cmd.exe
+	venv\Scripts\activate.bat
+	# In PowerShell
+	venv\Scripts\Activate.ps1
+	```
 
-```
-Choose an option:
-	1.	By Shop ID
-	2.	By Product ID
-	9.	Exit
-Enter your choice: 1
-Enter the Shop ID: 878799
-Enter the number of pages to fetch (200/page): 5
-Data saved to ./shop/878799.csv
-```
+	for Linux & MacOS
+
+	```sh
+	source myvenv/bin/activate
+	```
+
+5. Install dependencies
+
+	```sh
+	pip install -r requirements.txt
+	```
+
+6. Create directory for the saved files
+
+	```sh
+	mkdir ./shop
+	```
+
+7. Run the program
+
+	```sh
+	python3 main.py
+	```
+
+8. Choose the operation needed
+
+	```sh
+	Choose an option:
+		1.	By Shop ID
+		2.	By Product ID
+		9.	Exit
+	Enter your choice: 1
+	Enter the Shop ID: 878799
+	Enter the number of pages to fetch (200/page): 5
+	Data saved to ./shop/878799.csv
+	```
 
 ## How it works
 
@@ -70,7 +99,7 @@ query ReviewList(
             reviewText
             reviewerID
             reviewerName
-   replyText
+   			replyText
         }
         shopName
     }
