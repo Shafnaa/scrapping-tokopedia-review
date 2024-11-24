@@ -1,2 +1,2 @@
 pandas
-gql[all]
+requests

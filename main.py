@@ -1,12 +1,6 @@
-import json
-import os
-import asyncio
 import requests
 
 import pandas as pd
-
-from gql import gql, Client
-from gql.transport.aiohttp import AIOHTTPTransport
 
 BASE_URL = "https://gql.tokopedia.com/graphql"
 
@@ -301,7 +295,7 @@ def __main__():
         case 9:
             exit(0)
         
-if __name__ == "__main__":   
+if __name__ == "__main__":
     print("Fetching cookies...")
     
     session = requests.Session()
