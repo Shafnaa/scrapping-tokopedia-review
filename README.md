@@ -48,7 +48,7 @@ This script is used for scrapping Tokopedia Reviews by using the Tokopedia Graph
 6. Create directory for the saved files
 
 	```sh
-	mkdir ./shop
+	mkdir shop product category
 	```
 
 7. Run the program
