@@ -428,7 +428,9 @@ def __main__():
     print("\t3.\tBy Category")
     print("\t9.\tExit")
 
-    match int(input("Enter your choice: ")):
+    choice = int(input("Enter your choice: "))
+
+    match choice:
         case 1:
             try:
                 shop_id = str(input("Enter the Shop ID: "))
